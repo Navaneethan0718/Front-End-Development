@@ -1,0 +1,15 @@
+body{
+    background: lightskyblue;
+    align-content: center;
+    font-family: cursive;
+}
+
+form{
+    size: 40%;
+    background: whitesmoke;
+    padding: 10px;
+    margin-top:200px ;
+    margin-left:560px ;
+    margin-right: 430px;
+    margin-bottom: ;
+}
