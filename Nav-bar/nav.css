@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    list-style: none;
+    background: #000;
+    padding: 10px;
+}
+
+.navbar li {
+    display: inline-block;
+    position: relative;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #1b03ed;
+    list-style: none;
+    padding: 0;
+    min-width: 120px;
+}
+
+.dropdown-menu li a {
+    padding: 8px 12px;
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
