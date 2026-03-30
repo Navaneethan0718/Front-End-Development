@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Validation</title>
+<style>
+body{
+ font-family:"Times New Roman";
+ background:#f2f2f2;
+}
+.container{
+ width:400px;
+ margin:50px auto;
+ background:white;
+ padding:25px;
+ border-radius:10px;
+ box-shadow:0px 0px 10px gray;
+}
+input{
+ width:100%;
+ padding:8px;
+ margin:8px 0;
+}
+
+button{
+ width:100%;
+ padding:10px;
+ background:green;
+ color:white;
+ border:none;
+ font-size:16px;
+ cursor:pointer;
+}
+.error{
+ color:red;
+ font-size:14px;
+}
+</style>
+<script>
+function validateForm(){
+let name=document.getElementById("name").value;
+let email=document.getElementById("email").value;
+let password=document.getElementById("password").value;
+let phone=document.getElementById("phone").value;
+let emailPattern=/^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+let phonePattern=/^[0-9]{10}$/;
+
+if(name==""){
+alert("Name cannot be empty");
+return false;
+}
+if(!email.match(emailPattern)){
+alert("Enter valid Email");
+return false;
+}
+if(password.length<6){
+alert("Password must be at least 6 characters");
+return false;
+}
+if(!phone.match(phonePattern)){
+alert("Enter valid 10-digit phone number");
+return false;
+}
+alert("Form Submitted Successfully");
+return true;
+}
+</script>
+</head>
+<body>
+<div class="container">
+<h2 align="center">Registration Form</h2>
+<form onsubmit="return validateForm()">
+<label>Name</label>
+<input type="text" id="name">
+<label>Email</label>
+<input type="text" id="email">
+<label>Password</label>
+<input type="password" id="password">
+<label>Phone Number</label>
+<input type="text" id="phone">
+<button type="submit">Submit</button>
+</form>
+</div>
+</body>
+</html>
