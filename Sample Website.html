@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Single File Website</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;line-height:1.6}
+nav{display:flex;justify-content:space-between;padding:20px 40px;background:#222;color:#fff}
+nav ul{display:flex;gap:20px;list-style:none}
+nav a{color:#fff;text-decoration:none}
+.hero{height:80vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:#f5f5f5}
+.hero h1{font-size:3rem;margin-bottom:10px}
+.btn{padding:12px 24px;border:none;background:#222;color:#fff;cursor:pointer}
+.features{display:flex;gap:20px;justify-content:center;padding:60px;flex-wrap:wrap}
+.card{border:1px solid #ddd;padding:20px;width:250px}
+footer{text-align:center;padding:20px;background:#222;color:#fff}
+</style>
+</head>
+<body>
+<nav>
+<h2>MySite</h2>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<h1>Single File Website</h1>
+<p>Everything is contained in one HTML file.</p>
+<button class="btn">Get Started</button>
+</section>
+
+<section class="features">
+<div class="card"><h3>Fast</h3><p>No external CSS needed.</p></div>
+<div class="card"><h3>Responsive</h3><p>Works on desktop and mobile.</p></div>
+<div class="card"><h3>Simple</h3><p>Easy to customize.</p></div>
+</section>
+
+<footer>
+<p>© 2026 MySite</p>
+</footer>
+</body>
+</html>
