@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Slider</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.slider{
+    width:800px;
+    max-width:90%;
+    height:450px;
+    overflow:hidden;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.slides{
+    display:flex;
+    width:400%;
+    height:100%;
+    animation:slide 16s infinite;
+}
+
+.slides img{
+    width:25%;
+    height:100%;
+    object-fit:cover;
+}
+
+@keyframes slide{
+    0%,20%{transform:translateX(0);}
+    25%,45%{transform:translateX(-25%);}
+    50%,70%{transform:translateX(-50%);}
+    75%,95%{transform:translateX(-75%);}
+    100%{transform:translateX(0);}
+}
+</style>
+</head>
+<body>
+
+<div class="slider">
+    <div class="slides">
+        <img src="https://picsum.photos/id/1015/800/450" alt="Slide 1">
+        <img src="https://picsum.photos/id/1016/800/450" alt="Slide 2">
+        <img src="https://picsum.photos/id/1018/800/450" alt="Slide 3">
+        <img src="https://picsum.photos/id/1020/800/450" alt="Slide 4">
+    </div>
+</div>
+
+</body>
+</html>
