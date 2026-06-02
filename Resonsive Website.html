@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Website</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    line-height:1.6;
+}
+
+header{
+    background:#333;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+nav{
+    background:#444;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+}
+
+nav a:hover{
+    background:#555;
+}
+
+.hero{
+    padding:60px 20px;
+    text-align:center;
+    background:#f4f4f4;
+}
+
+.hero h1{
+    margin-bottom:15px;
+}
+
+.container{
+    display:flex;
+    gap:20px;
+    padding:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    flex:1 1 300px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+
+@media(max-width:768px){
+    .container{
+        flex-direction:column;
+    }
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav a{
+        text-align:center;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>My Responsive Website</h1>
+    <p>Simple HTML & CSS Example</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+    <h1>Welcome to My Website</h1>
+    <p>This layout automatically adapts to mobile, tablet, and desktop screens.</p>
+</section>
+
+<section class="container">
+    <div class="card">
+        <h2>Web Design</h2>
+        <p>Create modern and responsive websites.</p>
+    </div>
+
+    <div class="card">
+        <h2>Development</h2>
+        <p>Build fast and efficient web applications.</p>
+    </div>
+
+    <div class="card">
+        <h2>Support</h2>
+        <p>Get help and maintenance for your projects.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 My Responsive Website</p>
+</footer>
+
+</body>
+</html>
