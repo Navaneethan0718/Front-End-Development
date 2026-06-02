@@ -1,0 +1,25 @@
+{
+  "fontawesome_icons": [
+    "fa-house",
+    "fa-user",
+    "fa-envelope",
+    "fa-phone",
+    "fa-gear",
+    "fa-heart",
+    "fa-star",
+    "fa-magnifying-glass",
+    "fa-cart-shopping",
+    "fa-bell",
+    "fa-calendar",
+    "fa-camera",
+    "fa-image",
+    "fa-file",
+    "fa-download",
+    "fa-upload",
+    "fa-trash",
+    "fa-pen",
+    "fa-lock",
+    "fa-unlock",
+    "fa-globe"
+  ]
+}
